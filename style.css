@@ -1,0 +1,56 @@
+<!--hover-->
+.box {
+height:20px
+background-color:green;
+width:20%
+transition-property:width,background-color,height (putting it here prevent jerky motion)
+transition-duration:2s
+transition-timing-function:ease-out; 
+}
+.box:hover {
+width:100%
+background-color: red;
+height:200px;
+}
+
+button {
+    background-color:black;
+    color: white;
+    transition-property: background-color,color;
+    transition-duration: 1s;
+    transition-timing-function:ease-out;
+
+}
+
+button: hover{
+    background-color:white;
+    color:black;
+} 
+
+<!--keyframes-->
+
+.box
+background-color:yellow;
+width:150px
+height:150px
+margin:25px
+animation-name: design
+animation-duration: 1s
+animation-timing-function: ease-in-out;
+animation-iteration-count:2; or inifinite (how many times it will go from to)
+animation-direction: alternate-reverse;
+
+@keyframes design { 
+    from {
+        background-color;red
+        height:0px
+        width:0px;
+    }
+
+
+to {
+    background-color;red;
+    height:100px;
+    width:95%;
+}
+}
